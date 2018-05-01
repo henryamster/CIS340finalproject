@@ -23,15 +23,26 @@ $id =  $row['id'];
 function xmlRows($result){
     confirm_query($result);
     while($row = mysqli_fetch_array($result)){
-        $returnedXML = '<?xml version="1.0" encoding="UTF-8"?>
-        <xmlns:xlink="http://www.w3.org/1999/xlink">';
+        $returnedXML = '<?xml version="1.0" encoding="UTF-8"?><offering>';
         $returnedXML .= "<id>" .  $row['id'] . "</id>" ;
         $returnedXML .= "<course>" .  $row['course'] . "</course>" ;
         $returnedXML .= "<book>" .  $row['book'] . "</book>" ;
         $returnedXML .= "<request>" .  $row['request'] . "</request>" ;
         $returnedXML .= "<type>" .  $row['type'] . "</type>" ;
-        $returnedXML .= "<email xlink:type='simple' xlink:href='mailto:" . $row['email'] . "'>" .  $row['email'] . "</email>" ;
+        $returnedXML .= "<email>" . $row['email'] . "'>" .  $row['email'] . "</email></offering>" ;
         echo $returnedXML;
+    
+        $xml= new DOMDocument();
+$xml->loadXML($returnedXML, LIBXML_NOBLANKS); // Or load if filename required
+if (!$xml->schemaValidate('../assets/xml/schema.xsd')) // Or schemaValidateSource if string used.
+{
+    echo "Invalid, according to schema.";
+   // You have an error in the XML file
+}
+else{
+    echo "wooooops";
+}
+
     }
 }
 
