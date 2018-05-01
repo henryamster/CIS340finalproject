@@ -11,30 +11,25 @@ function checkForm(){
     var type = document.getElementsByName('type');
     validInt = 0;
     var rad= checkRadio(type);
-    (rad)? validInt++ :validBool=false; 
+    (rad != "false")? validInt++ :validBool=false; 
     (notEmpty(email.value))? validInt++:validBool =invalid(email);
     (notEmpty(req.value))? validInt++:validBool =invalid(req); 
     (notEmpty(book.value))? validInt++:validBool =invalid(book);
     (notEmpty(course.value))? validInt++:validBool = invalid(course); 
     
-    
- 
-    
-    // (notEmpty(type.value))? validBool = true:invalid(type); 
-       
-
 if (validInt == 5) {return true;}
 else return false;
 }
 function checkRadio(type){
 var valid=false;
+var returnedVal;
     for (var i = 0; i < type.length; i++) {
         if (type[i].checked) {
-            returnedVal = cl[i].value;
+            returnedVal = type[i].value;
             valid = true;
         }
     }
-    if(valid){ return valid; } 
+    if(valid){ return returnedVal; } 
     else {document.getElementsByTagName('fieldset')[0].style.border="2px solid red";
           return valid;}
 }
@@ -56,6 +51,6 @@ clearBorder(fieldset);
 }
 function clearBorder(elements){
     for (var i = 0; i < elements.length; i++){
-        elements[i].style.border="0px";
+        elements[i].style.border="2px solid black";
     }
     }
