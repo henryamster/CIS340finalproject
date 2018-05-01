@@ -28,5 +28,5 @@
 </div>
 
 </div>
-<script src="js/validatePost.js"></script>
+<script src="/public/js/validatePost.js"></script>
 <?php include('../includes/footer.php'); ?>

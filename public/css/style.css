@@ -212,6 +212,9 @@ input{
     border-radius: 12px;
     border:2px solid black;
 }
+input:focus, textarea:focus{
+    background:lightgoldenrodyellow;
+}
 textarea{
     width:100%;
     font-size:2em;
