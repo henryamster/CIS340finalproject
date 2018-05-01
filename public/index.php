@@ -10,7 +10,7 @@
         cash for your summer getaway
         or holiday season!</p>
 </div>
-<div class="card grey-bg">
+<div class="card grey-bg ">
         <div class="emojiPanel">
         📖💸
         </div>
@@ -23,7 +23,7 @@
         are looking for or are looking to get!
         </p>
 </div>
-<div class="card black-bg white-text">
+<div class="card black-bg white-text  center">
     
         <h3>How will I be contacted?</h3>
         <p>
@@ -32,7 +32,7 @@
         way to be reached, including facebook, twitter, or snapchat username. 
         </p>
 </div>
-<div class="card white-bg">
+<div class="card white-bg right">
     
         <h4>What about once I've traded?</h4>
         <p>

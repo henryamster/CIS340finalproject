@@ -3,7 +3,7 @@
 
 <div class="container" role="main">
 <div class="card white-bg" >
-<h1>Post your book or request</h1>
+<p>Post your book or request</p>
 <form action="submit.php" method="post" onsubmit="return checkForm()">
     <input type="text" id="course" name="course" maxlength="6">
     </input><label for="course">Course</label>

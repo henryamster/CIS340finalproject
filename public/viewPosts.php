@@ -1,7 +1,10 @@
 
 <?php include('../includes/header.php'); ?>
 <div class="container">
-
+    <div class="searchbar">
+        <input name="search" id="search" type="text></input>">
+        <label for="search" class="searchbar">Begin typing either the course name or book title...</label>
+    </div>
     <div class="card white-bg listing">
 
         <h4 class="course">MKT300 </h4> 
