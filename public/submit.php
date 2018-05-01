@@ -1,5 +1,5 @@
 <?php include("../includes/header.php");?>
-<?php require_once('../includes/db-connection.php');?>
+<?php include('../includes/db-connection.php');?>
 <?php include('../includes/functions.php');?>
 
 
@@ -23,7 +23,7 @@ if (mysqli_query($link, $query)) {
     echo ' <p>email: <a href="' . $_POST['email'] . '">'.$_POST['email'].'</a></p>';
     echo '</div>';
 } else {
-    echo "Error: " . $query . "<br>" . mysqli_error($conn);
+    echo "Error: " . $query . "<br>" . mysqli_error($link);
 }
 ?>
 

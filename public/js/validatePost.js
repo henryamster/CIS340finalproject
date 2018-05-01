@@ -11,7 +11,7 @@ function checkForm(){
     var type = document.getElementsByName('type');
     validInt = 0;
     var rad= checkRadio(type);
-    (rad != "false")? validInt++ :validBool=false; 
+    (rad != false)? validInt++ :validBool=false; 
     (notEmpty(email.value))? validInt++:validBool =invalid(email);
     (notEmpty(req.value))? validInt++:validBool =invalid(req); 
     (notEmpty(book.value))? validInt++:validBool =invalid(book);
@@ -32,6 +32,7 @@ var returnedVal;
     if(valid){ return returnedVal; } 
     else {document.getElementsByTagName('fieldset')[0].style.border="2px solid red";
           return valid;}
+          return false;
 }
 function notEmpty(val){
     return (val != "" ); 
