@@ -1,11 +1,11 @@
 <footer>
     <ul>
-    <li>EKU CBT Book Swap</li>
+    <li class="footerTitle">EKU CBT Book Swap</li>
     <li>CIS 340 Final Project</li>
-    <li>Ben Eipert and Henry Fritz</li>
+    <li>Ben Eipert and <a href="https://henryfritz.xyz/">Henry Fritz</a></li>
     </ul>
     <ul>
-    <li>github</li>
+    <li><a href="https://github.com/henryamster/CIS340finalproject">github</a></li>
     </ul>
 </footer>
 </body>

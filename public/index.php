@@ -27,7 +27,9 @@
     
         <h3>How will I be contacted?</h3>
         <p>
-        You post your phone number, so you will likely recieve a text message with an inquiry about your textbook. 
+        Your post contains your email address, so you will likely recieve an 
+        email with an inquiry about your textbook, but feel free to include an alternative
+        way to be reached, including facebook, twitter, or snapchat username. 
         </p>
 </div>
 <div class="card white-bg">
