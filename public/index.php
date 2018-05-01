@@ -41,3 +41,4 @@
         </div>
 </div>
     <?php include('../includes/footer.php'); ?>
+    <script src="js/disclaimer.js"></script>

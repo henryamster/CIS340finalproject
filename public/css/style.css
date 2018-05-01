@@ -34,7 +34,7 @@ Ben Eipert & Henry Fritz */
     text-shadow: url('../imgs/argyle.png');
 }
 body{
-    background-color:rgb(54, 54, 54);
+    background-color:rgb(210,210,210);
     background-image:url("../imgs/argyle.png");
    font-weight: 300;
 }
@@ -365,4 +365,50 @@ div.searchbar label{
         padding-top:25px;
     }
    
+ }
+
+ /*XML styles */
+ xml{
+     height:100%;
+     background:white;
+ }
+ id{
+display:block;
+font-size:.8em;
+text-align: center;
+border:1px solid;
+border-radius: 50%;
+width:18px;
+height:18px;
+ }
+ course{
+     font-size:3em;
+     display:block;
+ }
+ book{
+     font-size:4em;
+     display:block;
+     padding-left:25px;
+ }
+ request{
+     font-size:1em;
+     display:block;
+   color:#44192c;
+   text-align: center;
+   min-height:200px;
+   padding-top:25px;
+ }
+ .singleItem{
+     height:100vh;
+ }
+ type{
+     text-align: right;
+     color:red;
+     font-size:1.3em;
+     padding-left:25px;
+ }
+ email{
+     display:block;
+     font-size:1.6em;
+     padding-left:25px;
  }

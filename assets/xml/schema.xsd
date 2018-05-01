@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="id" type="xs:int" />
+    <xs:element name="course" type="crnpotatoValid" />
+    <xs:element name="book" type="xs:string" />
+    <xs:element name="request" type="xs:string" />
+    <xs:element name="type" type="adTypeValid" />
+    <xs:element name="email" type="emailValid" />    
+
+    
+    <xs:simpleType name="emailValid">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+        <xs:simpleType name="crnpotatoValid">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="^[a-zA-Z]{3}\d{3}$" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+    
+    <xs:simpleType name="adTypeValid">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Request"/>
+            <xs:enumeration value="Offer"/>
+            <xs:enumeration value="Both"/>
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>
