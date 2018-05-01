@@ -10,6 +10,6 @@ function passSearch(){
             document.getElementById('results').innerHTML = this.response;
         }
     };
-    xhr.open('GET', '../includes/search.php?q=' + query, true);
+    xhr.open('GET', 'search.php?q=' + query, true);
     xhr.send();
 }

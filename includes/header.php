@@ -13,7 +13,7 @@
 <body>
 <header>
 <nav id="primary-menu">
-<img src="../public/imgs/linkedheaderimgsrc.png" id="logo">
+<img src="/imgs/linkedheaderimgsrc.png" id="logo">
 <ul id="navcontainer">
 <li>
 <a href="index.php" class="nav-link" id="primaryLink">EKU&nbsp;CBT&nbsp;Book&nbsp;Swap</a>

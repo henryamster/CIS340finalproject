@@ -31,11 +31,11 @@ Ben Eipert & Henry Fritz */
     font-family: 'Ubuntu';
     font-size:16px;
     text-shadow:rgba(0,0,0,0.3) 1px 1px;
-    text-shadow: url('/public/imgs/argyle.png');
+    text-shadow: url('../imgs/argyle.png');
 }
 body{
     background-color:rgb(54, 54, 54);
-    background-image:url("/public/imgs/argyle.png");
+    background-image:url("../imgs/argyle.png");
    font-weight: 300;
 }
 /*Font classes */
@@ -55,17 +55,17 @@ font-
 .white-bg{background-color:#FFF;}
 
 .texture1{
-    background:url('/public/imgs/beige-paper.png');
+    background:url('../imgs/beige-paper.png');
     background-blend-mode: lighten;
     background-color: #44192c;
 }
 .texture2{
-    background:url('/public/imgs/binding-light.png');
+    background:url('../imgs/binding-light.png');
     background-blend-mode: lighten;
     background-color: #5e213b;
 }
 .texture3{
-    background:url('/public/imgs/cardboard.png');
+    background:url('../imgs/cardboard.png');
     background-blend-mode: lighten;
     background-color: #55464d;
 }
@@ -217,7 +217,7 @@ padding:2px;
     border-radius: 12px;
     border:6px solid white;
     background-color: #2e2428;
-    background-image:url('/public/imgs/beige-paper.png');
+    background-image:url('../imgs/beige-paper.png');
     background-blend-mode: overlay;
     color:rgb(231, 233, 235);
     font-weight: 400;
