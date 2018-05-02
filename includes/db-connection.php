@@ -1,8 +1,8 @@
 <?php 
-                $user = 'cis340final';
-                $password = 'cis340DB';
+                $user = 'root';
+                $password = 'root';
                 $db = 'cis340';
-                $host = 'cis340.database.windows.net';
+                $host = 'localhost';
                 $port = 3306;
                 $link = mysqli_init();
                 $success = mysqli_real_connect(
