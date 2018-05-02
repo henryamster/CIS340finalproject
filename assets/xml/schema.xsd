@@ -24,7 +24,7 @@
     
         <xs:simpleType name="crnpotatoValid">
         <xs:restriction base="xs:string">
-            <xs:pattern value="^[a-zA-Z]{3}\d{3}$" />
+            <xs:pattern value="[a-zA-Z]{3}\d{3}" />
         </xs:restriction>
     </xs:simpleType>
     

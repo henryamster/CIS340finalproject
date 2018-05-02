@@ -15,7 +15,7 @@ function checkForm(){
     (notEmpty(email.value))? validInt++:validBool =invalid(email);
     (notEmpty(req.value))? validInt++:validBool =invalid(req); 
     (notEmpty(book.value))? validInt++:validBool =invalid(book);
-    (notEmpty(course.value))? validInt++:validBool = invalid(course); 
+    (notEmpty(course.value) && course.value.match(/[a-zA-Z]{3}\d{3}/))? validInt++:validBool = invalid(course); 
     
 if (validInt == 5) {return true;}
 else return false;
