@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="/imgs/eku_6SV_icon.ico" />
+    <link rel="shortcut icon" href="/imgs/favicon.ico" />
 </head>
 <body>
 <header>
